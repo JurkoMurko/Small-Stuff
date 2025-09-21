@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "csv-reader": "^1.0.12",
+    "csv-writer": "^1.6.0"
+  }
+}

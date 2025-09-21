@@ -1,0 +1,358 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>
+Search Results
+</title>
+    <link href="/ParagonLS/scripts/packages/Modulecss?v=g917WVQNEkImY1HYxIvsSAVHEFgLIjWWHWsIZCxmEAM1" rel="stylesheet"/>
+
+    <link href="/ParagonLS/Content/Themes/Default/Modulecss?v=3217612" rel="stylesheet" type="text/css" />
+    <link href="/ParagonLS/Content/fontawesome/css/all.min.css?v=3217612" rel="stylesheet" type="text/css" />
+	
+<link href="/ParagonLS/scripts/packages/SearchResultscss?v=3IfYltcI5llg6_i_0m9QfmHZgjAoxUGC6RvRDSo8EDY1" rel="stylesheet"/>
+
+<link href="/ParagonLS/Scripts/bootstraptour/bootstrap-tour-standalone.min.css?v=3217612" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        div.tree ul li.leaf ins {
+            display: inline-block;
+            text-decoration: none;
+            width: 16px;
+            height: 16px;
+        }
+        
+	</style>
+
+    <meta name="format-detection" content="telephone=no" />
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    
+</head>
+<body>
+    <div style="display: none;">
+        <a id="datePickCal" class="ui-corner-all ui-state-default" style="cursor:pointer" href="javascript:;" title="Select Date"><span class="ui-icon ui-icon-calendar"></span></a>
+    </div>
+    
+    <input name="__RequestVerificationToken" type="hidden" value="nTRfw90N8ZF0L8Ej9w1e6dfpaGeMjqZQMT5HVYLrstcdoS9InMI60NATrPvkex1gcNe90bj9-fT23DjVhHZrNU-WgpRX_gKCQtSO43C5sok1" />
+    <div id="main" style="overflow:hidden;" class="ui-helper-hidden">
+        <input id="ViewSelected" type="hidden" class="f-hidden-viewselected" value=""/>
+        
+        
+        <div id="TopSection">
+            <ul class="f-panel-menu sf-menu"><li><a href="javascript:void(0);" id="ShowChecked" rel="" tabindex="-1" title="Show Checked"><ins class="show_checked">&nbsp;</ins>Checked</a><li><a href="javascript:void(0);" id="ShowAll" rel="" tabindex="-1" title="Show All"><ins class="show_all">&nbsp;</ins>All</a><li><a href="javascript:void(0);" id="Email" rel="" tabindex="-1" title="Email"><ins class="email">&nbsp;</ins>Email</a><li><a class="child-menu-div" href="javascript:void(0);" rel="" tabindex="-1" title="Share"><ins class="share">&nbsp;</ins>Share</a><ul class="sf-child-menu"><li><a cboxheight="650" cboxwidth="800" class="f-form-popup-share-collablink" href="javascript:void(0);" rel="306" tabindex="-1" title="CollabLink Share"><ins class="share_collablink">&nbsp;</ins>CollabLink Share</a><li><a cboxheight="650" cboxwidth="800" class="f-form-popup-share-sms" href="javascript:void(0);" rel="333" tabindex="-1" title="Text"><ins class="share_sms">&nbsp;</ins>Text</a></ul><li><a class="child-menu-div" href="javascript:void(0);" rel="" tabindex="-1" title="Save"><ins class="save">&nbsp;</ins>Save</a><ul class="sf-child-menu"><li><a href="javascript:void(0);" id="save-title" rel="" tabindex="-1" title="SEARCH">SEARCH</a><li><a cboxheight="480" cboxwidth="650" class="f-form-popup sf-disabled" href="/ParagonLS/Search/Property.mvc/SaveSearch/0?searchType=MARKET_MONITOR&amp;IsAddingNewForContact=False&amp;saveCriteriaFromSession=True" id="save-results" rel="" tabindex="-1" title="Save Search"><ins class="save_search">&nbsp;</ins>Save Search</a><li><a cboxheight="480" cboxwidth="650" class="f-form-popup sf-disabled" href="/ParagonLS/Search/Property.mvc/SaveSearch/0?isSaveAsOption=True&amp;searchType=MARKET_MONITOR&amp;is2=0&amp;ssid=-1&amp;templateid=-1&amp;IsAddingNewForContact=False&amp;saveCriteriaFromSession=True" id="save-search-as-results" rel="" tabindex="-1" title="Save Search As..."><ins class="save_search_as">&nbsp;</ins>Save Search As...</a><li><a href="javascript:void(0);" id="save-listings" rel="" tabindex="-1" title="LISTINGS">LISTINGS</a><li><a href="javascript:void(0);" id="SaveFavorites" rel="" tabindex="-1" title="Save to Listing Cart"><ins class="listing_cart">&nbsp;</ins>Save to Listing Cart</a></ul><li><a class="child-menu-div" href="javascript:void(0);" rel="" tabindex="-1" title="Print"><ins class="print">&nbsp;</ins>Print</a><ul class="sf-child-menu"><li><a cboxheight="620" cboxwidth="800" class="f-form-popup-print" href="/ParagonLS/Controls/JqGridPrint.mvc" rel="" tabindex="-1" title="Print"><ins class="regular_print">&nbsp;</ins>Print</a><li><a href="javascript:void(0);" id="PrintPlus" rel="" tabindex="-1" title="Print +"><ins class="print_plus">&nbsp;</ins>Print +</a></ul><li><a class="child-menu-div" href="javascript:void(0);" id="Export" rel="" tabindex="-1" title="Export"><ins class="export">&nbsp;</ins>Export</a><ul class="sf-child-menu"><li><a href="javascript:void(0);" id="ExportCSV" rel="" tabindex="-1" title="Export to CSV"><ins class="csv">&nbsp;</ins>Export to CSV</a><li><a class="sf-hidden" href="javascript:void(0);" id="ExportXLS" rel="" tabindex="-1" title="Export to XLS"><ins class="xls">&nbsp;</ins>Export to XLS</a><li><a class="sf-hidden" href="javascript:void(0);" id="ExportXLS" rel="" tabindex="-1" title="Export to Excel"><ins class="xls">&nbsp;</ins>Export to Excel</a><li><a href="javascript:void(0);" id="FavoriteExport" rel="" tabindex="-1" title="Favorite Custom Exports"><ins class="favoriteexport">&nbsp;</ins>Favorite Custom Exports</a><li><a href="javascript:void(0);" id="ManageExport" rel="" tabindex="-1" title="Manage Custom Exports"><ins class="custom_export">&nbsp;</ins>Manage Custom Exports</a><li><a href="javascript:void(0);" id="DownloadDocs" rel="" tabindex="-1" title="Download selected documents to .zip"><ins class="save">&nbsp;</ins>Download Documents</a></ul><li><a class="child-menu-div" href="javascript:void(0);" rel="" tabindex="-1" title="Customize"><ins class="customize">&nbsp;</ins>Customize</a><ul class="sf-child-menu"><li><a href="javascript:void(0);" id="Customize" rel="" tabindex="-1" title="Fields"><ins class="fields">&nbsp;</ins>Fields</a><li><a cboxheight="410" cboxwidth="450" href="javascript:void(0);" id="Sort" rel="" tabindex="-1" title="Sort"><ins class="sort">&nbsp;</ins>Sort</a></ul><li><a href="javascript:void(0);" id="Correction" rel="" tabindex="-1" title="Correction"><ins class="correction">&nbsp;</ins>Correction</a><li><a href="javascript:void(0);" id="Integrations" rel="" tabindex="-1" title="Actions"><ins class="integrations">&nbsp;</ins>Actions</a><li><a class="child-menu-div" href="javascript:void(0);" rel="" tabindex="-1" title="More Actions"><ins class="more">&nbsp;</ins>More</a><ul class="sf-child-menu"><li><a cboxwidth="330" class="f-form-popup" href="/ParagonLS/Search/Results.mvc/CriteriaSummary/tab1_1" id="CritSummary" rel="" tabindex="-1" title="Criteria"><ins class="criteria_summary">&nbsp;</ins>Criteria</a><li><a class="HoverAction" href="javascript:void(0);" id="Stats" rel="/ParagonLS/Search/Results.mvc/Stats/tab1_1" tabindex="-1" title="Toggle Stats"><ins class="toggle_stats">&nbsp;</ins>Toggle Stats</a><li><a href="javascript:void(0);" id="SHOWPDF" rel="" tabindex="-1" title="Click to Toggle PDF"><ins class="pdf_html">&nbsp;</ins>PDF</a><li><a href="javascript:void(0);" id="SHOWHTML" rel="" tabindex="-1" title="Click to Toggle HTML"><ins class="pdf_html_checked">&nbsp;</ins>HTML</a><li><a href="javascript:void(0);" id="AddToCMA" rel="" tabindex="-1" title="Click to Add Listing(s) to CMA"><ins class="cma">&nbsp;</ins>Add to CMA</a><li><a href="javascript:void(0);" id="GenerateEasyCMA" rel="" tabindex="-1" title="Click to Generate Easy CMA"><ins class="cma">&nbsp;</ins>Add to EasyCMA</a><li><a href="javascript:void(0);" id="Maintain" rel="" tabindex="-1" title="Click to Maintain Listing"><ins class="maintain">&nbsp;</ins>Maintain Listing</a><li><a href="javascript:void(0);" id="GetDrivingDirections" rel="" tabindex="-1" title="Click to get Driving Directions."><ins class="drivingDirections">&nbsp;</ins>Driving Directions</a><li><a href="javascript:void(0);" id="CreateListingSlideshow" rel="" tabindex="-1" title="Click to create a Listing Slideshow"><ins class="listingSlideshow">&nbsp;</ins>Listing Slideshow</a></ul></ul>
+            <div id="TopRightSection">
+                <div class="ui-jqgrid" id="PagerControl"><table border="0" cellpadding="0" cellspacing="0" style="table-layout: auto; white-space: nowrap; width:190px;"><tbody><tr><td align="right" id="pager_left"><table border="0" cellpadding="0" cellspacing="0" class="ui-pg-table" style="white-space: nowrap; table-layout: auto;"><tbody><tr><td class="ui-state-disabled ui-corner-all ui-pg-button" id="first" style="cursor: pointer;"><span class="ui-icon-seek-first ui-icon" title="First"></span></td><td class="ui-state-disabled ui-corner-all ui-pg-button" id="prev" style="cursor: pointer;"><span class="ui-icon-seek-prev ui-icon" title="Previous"></span></td><td class="ui-state-disabled ui-pg-button" style="width: 4px;"><span class="ui-separator"></span></td><td nowrap="true"><span id="pageLabel">Page </span><input class="ui-pg-input" id="txtCurPage" maxlength="5" size="2" type="text" /><span> of </span><span id="sp_1">&nbsp;</span></td><td class="ui-state-disabled ui-pg-button" style="width: 4px;"><span class="ui-separator"></span></td><td class="ui-state-disabled ui-corner-all ui-pg-button" id="next" style="cursor: pointer;"><span class="ui-icon-seek-next ui-icon" title="Next"></span></td><td class="ui-state-disabled ui-corner-all ui-pg-button" id="last" style="cursor: pointer;"><span class="ui-icon-seek-end ui-icon" title="Last"></span></td><td class="ui-corner-all ui-pg-button" id="cancelLast" style="cursor: pointer; display: none;"><span class="ui-icon-seek-end ui-icon" title="Cancel"></span></td></tr></tbody></table></td><td align="center" id="pager_center"></td></tr></tbody></table></div>
+                <div id="ViewReportsParent" style=" position: absolute; right: 0px;">
+		<a class="noSelect_back_arrow" href="javascript:void(0);" title="Click To Load Previous Report">BACK
+		</a>
+		<div id="ViewReportsContainer">
+			<span class="noSelect txtViewName" id="txtViewName">REPORTS</span>
+			<a class="noSelect_arrow" href="javascript:void(0);" title="Click To Open Views / Reports">
+			</a>
+		</div>
+</div>
+
+            </div>
+        </div>
+        <div id="MiddleSection">
+            <div class="NotLoaded HoverDialog" title="Statistics" id="dialogStats" style="width: 950px;"><img alt="Progress" src="/ParagonLS/Scripts/autocompletefb/indicator.gif"/> Loading Please Wait...</div>
+        </div>
+
+        <div style="clear: both;" class="nativeScroll ui-layout-west" id="ifViewWrapper" >
+            <iframe frameborder="0" style="width: 100%; height: 100%; z-Index: -1;" name="ifView" id="ifView" src="about:blank" onload="if (typeof(resizePage) == 'function') { resizePage(); } return true;"></iframe>
+        </div>
+        
+        <div style="clear: both;" class="nativeScroll ui-layout-west" id="ifSpreadsheetWrapper" >
+            <iframe frameborder="0" style="width: 100%; z-Index: -1;" name="ifSpreadsheet" id="ifSpreadsheet"></iframe>
+        </div>
+
+        <iframe frameborder="0" style="height: 0; width: 0;" name="ifPrintView" id="ifPrintView"></iframe>
+	    <iframe frameborder="0" name="ifDivView" id="ifDivView" style="display: none; position: absolute; z-index: 1;"></iframe>
+        <div class="ui-widget f-rs-selector" id="ReportsBase"><fieldset><div class="legend ui-state-default"><span>Available Reports</span></div><div><div class="f-rs-link"><a href="javascript:void(0);" id="ReportsOpenAll">Open All</a>&nbsp;|&nbsp;<a href="javascript:void(0);" id="ReportsCloseAll">Close All</a></div><div id="Reports"><ul id="rootReports"><li rel="defaultItem"><a id="nodeSelected" viewID="1" customizable="True"exportXls="False" perPage="300" emailable="True" viewType="Spreadsheet"><ins></ins>Spreadsheet</a></li><li style="cursor: pointer" id="nodeFavorites" rel="favoritesContainer"><a><ins></ins>Favorites</a><ul><li isDefault="false" isDefaultResult="true" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="favoritesNormalItem" colorbox="" ><a id="v_spreadsheet" viewID="1" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="True" exportXls="False" downloadDocs="false" ><ins></ins>Spreadsheet</a><a class="remove-fav" title="Remove from Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="favoritesNormalItem" colorbox="" ><a id="v_bing_map" viewID="77" perPage="75" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ShowParcel=1><ins></ins>Google Map</a><a class="remove-fav" title="Remove from Favorites"><ins></ins></a></li></ul></li><li style="cursor: pointer" id="nodeSpreadsheets" rel="normalContainer"><a><ins></ins>Spreadsheets</a><ul><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_my_spreadsheet_2" viewID="100" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="True" exportXls="False" downloadDocs="false" ><ins></ins>My Spreadsheet 2</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_my_spreadsheet_3" viewID="101" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="True" exportXls="False" downloadDocs="false" ><ins></ins>My Spreadsheet 3</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_my_spreadsheet_4" viewID="102" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="True" exportXls="False" downloadDocs="false" ><ins></ins>My Spreadsheet 4</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_my_spreadsheet_1" viewID="103" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="True" exportXls="False" downloadDocs="false" ><ins></ins>My Spreadsheet 1</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_my_spreadsheet_5" viewID="104" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="True" exportXls="False" downloadDocs="false" ><ins></ins>My Spreadsheet 5</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_my_spreadsheet_6" viewID="105" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="True" exportXls="False" downloadDocs="false" ><ins></ins>My Spreadsheet 6</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpreadsheets" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_inventory" viewID="5" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Inventory</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li></ul></li><li style="cursor: pointer" id="nodeDetails" rel="normalContainer"><a><ins></ins>Details</a><ul><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_-customer_full" viewID="c157" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>-Customer Full</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="true" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_agent_full" viewID="c156" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Agent Full</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_allfields_for_office" viewID="c1841" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>AllFields for Office</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_customer_55_photos" viewID="c270" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Customer 55 photos</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_customer_9_photos" viewID="c1265" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Customer 9 photos</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_customer_w/agent" viewID="c1002" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Customer w/Agent</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_customer_w/assess" viewID="c1617" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Customer w/Assess</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_customer_w/map" viewID="c27" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Customer w/Map</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_customer_w/rateplug" viewID="c1780" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Customer w/RatePlug</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_just_map" viewID="c1747" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Just Map</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_just_photos" viewID="c1362" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Just Photos</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_large_photo_brochure" viewID="c240" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Large Photo Brochure</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_multi_photo_brochure" viewID="c241" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Multi Photo Brochure</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_my_custom_brochure" viewID="c243" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>My Custom Brochure</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeDetails" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_open_house_brochure" viewID="c383" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="True" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Open House Brochure</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li></ul></li><li style="cursor: pointer" id="nodeMultiUps" rel="normalContainer"><a><ins></ins>MultiUps</a><ul><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_3_up_multi_photo" viewID="c1317" perPage="3" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>3 Up Multi Photo</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_4_up_w/_remarks" viewID="c519" perPage="4" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>4 Up w/ Remarks</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_6_up_customizable" viewID="c245" perPage="6" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>6 Up Customizable</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_broker_open__-_9_up" viewID="c1863" perPage="9" emailable="True" viewType="Report" customizable="False" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Broker Open  - 9 up</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_open_house_-_9_up" viewID="c622" perPage="9" emailable="True" viewType="Report" customizable="False" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Open House - 9 up</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_parcel_number_checki" viewID="c1531" perPage="63" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Parcel Number Checki</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_quick_7_up" viewID="c158" perPage="7" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Quick 7 Up</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_rental_-_3_up" viewID="c420" perPage="3" emailable="True" viewType="Report" customizable="False" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Rental - 3 Up</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_showing_setup" viewID="c1238" perPage="8" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Showing Setup</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeMultiUps" ownerType="mlsitem" rel="mlsitem" colorbox="" ><a id="v_thumbnail" viewID="c248" perPage="6" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Thumbnail</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li></ul></li><li style="cursor: pointer" id="nodeSpecialty_Views" rel="normalContainer"><a><ins></ins>Specialty Views</a><ul><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_associated_docs" viewID="26" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="true" ><ins></ins>Associated Docs</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_property_history_report" viewID="54" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Property History Report</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_hotsheet_history_detail" viewID="34" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Hotsheet History Detail</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_thumbnail" viewID="28" perPage="5" emailable="True" viewType="Report" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Thumbnail</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_listing_photo_gallery" viewID="42" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="true"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Listing Photo Gallery</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_community_reports" viewID="iPointSv_70~600~1024~Redirect~False~False" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>Community Reports</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeSpecialty_Views" ownerType="NormalItem" rel="NormalItem" colorbox="true" ><a id="v_market_conditions_addendum" viewID="78" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="false" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Market Conditions Addendum</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li></ul></li><li style="cursor: pointer" id="nodeCMA" rel="normalContainer"><a><ins></ins>CMA</a><ul><li isDefault="false" isDefaultResult="false" parentHeader="nodeCMA" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_cma_quick_view" viewID="7" perPage="4" emailable="True" viewType="Report" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>CMA Quick View</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeCMA" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_cma_summary" viewID="38" perPage="1" emailable="True" viewType="Report" customizable="True" quickprint="false"  pagingcontrol="false" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>CMA Summary</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeCMA" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_cma_spreadsheet" viewID="56" perPage="300" emailable="True" viewType="Spreadsheet" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="False" downloadDocs="false" ><ins></ins>CMA Spreadsheet</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li></ul></li><li style="cursor: pointer" id="nodeReports" rel="normalContainer"><a><ins></ins>Reports</a><ul><li isDefault="false" isDefaultResult="false" parentHeader="nodeReports" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_current_market" viewID="14" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="false" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Current Market</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeReports" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_search_results_summary" viewID="304" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="false" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Search Results Summary</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeReports" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_market_summary" viewID="18" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="false" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Market Summary</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeReports" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_sold_market" viewID="15" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="false" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Sold Market</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeReports" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_sold_price" viewID="17" perPage="1" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="false" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Sold Price</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeReports" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_hotsheet_report" viewID="2" perPage="250" emailable="True" viewType="Report" customizable="True" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Hotsheet Report</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li><li isDefault="false" isDefaultResult="false" parentHeader="nodeReports" ownerType="NormalItem" rel="NormalItem" colorbox="" ><a id="v_hotsheet_history" viewID="33" perPage="100" emailable="True" viewType="Report" customizable="False" quickprint="false"  pagingcontrol="true" correction="False" showStats="False" exportXls="True" downloadDocs="false" ><ins></ins>Hotsheet History</a><a class="add-fav" title="Add to Favorites"><ins></ins></a></li></ul></li><li style="cursor: pointer" id="nodeRecycle_Bin" rel="recyclebinContainer"><a><ins></ins>Recycle Bin</a></li></ul></div></div></fieldset></div>
+        <input id="fromCMA" name="fromCMA" type="hidden" value="" />
+        <input id="fromCM" name="fromCM" type="hidden" value="False" />
+        <input id="fromSetWidth" name="fromSetWidth" type="hidden" value="False" />
+        <input id="addSummary" name="addSummary" type="hidden" value="" />
+        <div class="ui-helper-hidden" id="confirmSaveDialog" title="Save open CMA(s)?"><p> You currently have a CMA Presentation tab open.<br /><br /> This tab must be closed before another may be opened.<br /><br /> Please Save your information and close the tab before proceeding.</p></div>
+        <a visible="false" id="maintainlink" name="maintainlink"></a>
+        <div class="ui-helper-hidden" id="minboxwarning">Would you like to overwrite or restore the current email dialog?</div>
+        <div class="ui-helper-hidden" id="minboxwarningpp">Would you like to overwrite or restore the current Prin+ dialog?</div>
+        <div class="ui-helper-hidden" id="confirmation"></div>
+    </div>
+    <div title="Overwrite / Cancel?" style="display: none;" id="dialogPrintPlusOverwrite">
+        <p>A minimized Print+ operation is active. To close the existing session and start a new one select the Overwrite button. Otherwise select
+            Cancel to maintain the existing Print+ session.</p>
+    </div>
+
+    <div style="display: none" id="confirmAgentPreviewDialog" title="Agent Preview"></div>
+
+    <div style="display: none;" id="geocodeAlert" title="">
+        <p id="geocodeMsg"></p>
+    </div>
+
+    <div id="static_colorbox"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script src="/ParagonLS/scripts/packages/Modulejs?v=Fqt-iMcQrnD2RMkTeW1MUBxtMj0zKCqR8xWccGMkzDc1"></script>
+
+        
+
+    
+<script src="/ParagonLS/Scripts/focus/focus.eventdata.js?3217612" type="text/javascript"></script>
+<script src="/ParagonLS/scripts/packages/SearchResultsjs?v=75bTEG53xN2HZ7YLUd6M04tOsK0DT_6BQeaXNUeJ-p41"></script>
+
+<script src="/ParagonLS/Scripts/bootstraptour/bootstrap-tour-standalone-fixed.min.js?3217612" type="text/javascript"></script>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var processPrintUrl = '/ParagonLS/Search/Results.mvc/ProcessPrint';
+    var exportMappingURL = '/ParagonLS/Search/Export.mvc';
+    var exportFavoritesURL = '/ParagonLS/Search/Export.mvc/FavoriteExports';
+    var cmaIndexURL = '/ParagonLS/CMA/Main.mvc';
+    var comparableListUrl = '/ParagonLS/CMA/Comparable.mvc/ComparableList?viewID=56';
+    var addComparableUrl = '/ParagonLS/CMA/Comparable.mvc/AddCMAOptions';
+    var addToListingCartUrl = '/ParagonLS/Search/Property.mvc/SaveToListingCart';
+    var printUrl = '/ParagonLS/Search/Results.mvc/PrintPlus';
+    var customizeUrl = '/ParagonLS/Preferences/ReportPreferences.mvc/FieldPreference?fromAdmin=False';
+    var customizeLayoutUrl = '/ParagonLS/Preferences/ReportPreferences.mvc/CustomLayout';
+    var emailUrl = '/ParagonLS/Search/Results.mvc/EmailPlus';
+    var shareUrl = '/ParagonLS/Search/Results.mvc/Share';
+    var emailComposeUrl = '/ParagonLS/EmailManager/Email.mvc/Compose';
+    var documentDownloadUrl = '/ParagonLS/EmailManager/Email.mvc/DownloadAssociatedDocuments';
+    var correctionUrl = '/ParagonLS/EmailManager/Email.mvc/CorrectionEmail';
+    var idsService = '/ParagonLS/Services/Listing.svc/json/v1/GetIds';
+    var spreadsheetUrl = '/ParagonLS/Reports/Spreadsheet.mvc?fromSetWidth=False';
+    var marketConditionsAddendumUrl = '/ParagonLS/Search/Results.mvc/MarketConditionsAddendum';
+    var brokerManagementReportUrl = '/ParagonLS/Search/Results.mvc/BrokerManagementReport';
+    var reportUrl = '/ParagonLS/Reports/Report.mvc';
+    var agentPreviewListingsURL = '/ParagonLS/ContactManager/Contact.mvc/AgentPreviewApproveorDisaproveListings';
+    var isAgentPreview = false;
+    var attachBuyerContactListingsURL = '/ParagonLS/ContactManager/Contact.mvc/AssociateListingToBuyer';
+    var exportCSVUrl = '/ParagonLS/Search/Results.mvc/ExportCSV';
+    var saveFavoritesUrl = '/ParagonLS/Services/UserPref.svc/json/v1/SaveFavoritesAndRecycleBinItems';
+    var sortUrl = '/ParagonLS/Preferences/ReportPreferences.mvc/PreferenceSort';
+    var statsUrl = '/ParagonLS/Services/Listing.svc/json/v1/GetStats';
+    var lookUpStatusUrl = '/ParagonLS/Search/Property.mvc/LookUpStatus';
+    var reducedResultsUrl = '/ParagonLS/Content/ReducedResults.html';
+    var disableReducedResultsUrl = '/ParagonLS/Services/UserPref.svc/json/v1/DisableReducedResultMessage';
+    var lookUpStatusTarget = '';
+    var lookUpTitle =  '';
+    var taxSwitchUrl = '/ParagonLS/Search/Results.mvc/TaxSwitch';
+    var classID = 0;
+    var contactID = 0;
+    var isAddingNewForContact = false;
+    var saveSearchID = 0;
+    var templateID = 0;
+    var searchType = 'MARKET_MONITOR';
+    var saveSearchForContactUrl = '/ParagonLS/Search/Property.mvc/SaveSearch/0';
+    var saveListingCartForContactUrl = '/ParagonLS/Search/Property.mvc/SaveToListingCart/0';
+    var generateSaveSearchNameUrl = '/ParagonLS/Search/Property.mvc/generateUniqueSearchNameForContact';
+    var minClassID = 1;
+    var maintainUrl = '/ParagonLS/InputMaint/Listing.mvc';
+    var maxCMAListings = 1000;
+    var maxListingCartListings = 100;
+    var defaultSpreadsheetSort = '';
+    var drivingDirectionsUrl = '/ParagonLS/Reports/Report.mvc/DrivingDirectionsForm';
+    var maxListingSlideshowListings = 50;
+    var listingSlideshowUrl = '/ParagonLS/Search/Results.mvc/CreateListingSlideshow';
+    var showStatsOnSpreadsheets = true;
+    var showStatsOnReports = false;
+    var showReducedResultsMessage = false;
+    var maxQueryStringLength = 3000;
+    var _integrationsModalUrl = '/ParagonLS/Integration/Integration.mvc/ListingIntegrationsModal';
+    var PriorDate = '';
+    var changeDefaultReportUrl = '/ParagonLS/Preferences/Application.mvc/DefaultReportModal';;
+
+    if(PriorDate.length < 1)
+        PriorDate = new Date().toLocaleString();
+    if(typeof(parent.setAutoHotsheetText) == 'function')
+        parent.setAutoHotsheetText(PriorDate);
+
+    var associateContactToListingUrl = '/ParagonLS/Search/Property.mvc/AssociateContactToListing/0';
+
+    var showingTimeListingStatusUrl = '/ParagonLS/Integration/Integration.mvc/GetShowingTimeListingStatus';
+    var docCentralPublicListingStatusUrl = '/ParagonLS/Integration/Integration.mvc/GetDocCentralPublicListingStatus';
+
+    var isShowingTimeEnabled = true;
+    var isDocCentralPublicEnabled = false;
+
+    var isShowingTimeActionIconEnabled = true;
+    var isDocCentralPublicActionIconEnabled = false;
+
+    var integrationUrl = '/ParagonLS/Integration/Integration.mvc/ThirdParty';    
+    var formSimplicityUrl = '/ParagonLS/Integration/Integration.mvc/ViewFormSimplicity';
+    var mlsAdvantageUrl = '/ParagonLS/Integration/Integration.mvc/ViewMlsAdvantage';    
+    var showingTimeBasicUsed = false;
+
+        var NotSet = 0;
+    var vidSpreadsheet = 1;
+    var vidHotsheet = 2;
+    var vidOpen = 3;
+    var vidTour = 4;
+    var vidFirmInv = 5;
+    var vidExport = 6;
+    var vidCMA = 7;
+    var vidLargePhoto = 8;
+    var vidMainAndInteriorPhoto = 9;
+    var vidListingWithFullFeats = 10;
+    var vidCustom1 = 11;
+    var vidCustom2 = 12;
+    var vid6Listings = 13;
+    var vidCurMarAnl = 14;
+    var vidSoldMarAnl = 15;
+    var vidMarketShare = 16;
+    var vidSoldPrcAnl = 17;
+    var vidMarketSum = 18;
+    var vidCustomFD = 19;
+    var vidCustomFD2 = 20;
+    var vidCMAWithoutProp = 21;
+    var vidFullDetail = 22;
+    var vidMAP = 23;
+    var vidTax = 24;
+    var vidVT = 25;
+    var vidDocs = 26;
+    var vidExcel = 27;
+    var vidThumbnail = 28;
+    var vidBoardDetail = 29;
+    var vidAgentDetail = 30;
+    var vidOfficeDetail = 31;
+    var vidPassport = 32;
+    var vidPropHist = 33;
+    var vidHotDetail = 34;
+    var vidPRE = 35;
+    var vidSSComma = 36;
+    var vidExportCustom = 37;
+    var vidCMASummary = 38;
+    var vidMAPSummary = 39;
+    var vidOneLine = 40;
+    var vidHTMLOneLine = 41;
+    var vidListingImages = 42;
+    var vidIDXThumbnail = 50;
+    var vidIDXDetail = 51;
+    var vidOTThumbnail = 52;
+    var vidTourOH = 53;
+    var vidHistory = 54;
+    var vidFirmInventoryReport = 55;
+    var vidCMASpreadsheet = 56;
+    var vidTOHCustom = 57;
+    var vidTourOHGridLoad = 58;
+    var vidTourOHGrid = 59;
+    var vidPDRTFExport = 60;
+    var vidPic = 61;
+    var vidPortfolio = 62;
+    var vidCMAHorizontal = 63;
+    var vidLaunchMapExe = 64;
+    var vidListingAuditReport = 70;
+    var vidListingPhotoAuditReport = 71;
+    var vidListingAssocDocAuditReport = 72;
+    var vidListingIDXAuditReport = 73;
+    var vidListingAuditFullDetail = 74;
+    var vidListingDeletedDetail = 75;
+    var vidDrivingDirections = 76;
+    var vidVirtualEarth = 77;
+    var vidMarketConditionsAddendum = 78;
+    var vidContactPrintList = 79;
+    var vidCriteriaPage = 80;
+    var vidBrokerManagementReport = 81;
+    var vidCMASummaryEssential = 82;
+    var vidClientConThumbnail = 83;
+    var vidClientConPinterest = 84;
+    var vidClientConDetail = 85;
+    var vidCCPThumbnail = 93;
+    var vidCCPSocialMedia = 94;
+    var vidCCPDetail = 95;
+    var vidListingSummaryDisplay = 97;
+    var vidSpreadsheetExtendedMin = 100;
+    var vidSpreadsheetExtendedMax = 119;
+    var vidPCSpreadsheet = 120;
+    var vidPCHotsheetSpreadsheet = 121;
+    var vidPCTourOHSpreadsheet = 122;
+    var vidPCListingsPublicRecordsSpreadsheet = 123;
+    var vidTohSpreadsheetExtendedMin = 130;
+    var vidTohSpreadsheetExtendedMax = 138;
+    var vidGraphAvgDaysOnMkt = 150;
+    var vidGraphAvgSoldVsAvgListPrice = 151;
+    var vidGraphDaysOnMarket = 152;
+    var vidGraphPricingAnalysis = 153;
+    var vidGraphSoldVsListPrice = 154;
+    var vidGraphTotalMarketShareByPrice = 155;
+    var vidGraphTotalVolumeSoldByMonth = 156;
+    var vidFullDetailLargePhoto = 157;
+    var vidExportMapData = 158;
+    var vidSlideShowRun = 170;
+    var vidSlideShowOptions = 171;
+    var vidTemplateReportMin = 180;
+    var vidTemplateReportMax = 187;
+    var vidBrokerManagement = 200;
+    var vidTaxSpreadsheet = 201;
+    var vidListingHistory = 202;
+    var vidHotSheetGrid = 203;
+    var vidListingSlideshow = 220;
+    var vidPacketCMASummary = 230;
+    var vidListingPhotos = 300;
+    var vidConfirmDelete = 301;
+    var vidListingQuickView = 302;
+    var vidMapPro = 303;
+    var vidSearchResSum = 304;
+    var vidListingActivityReport = 305;
+    var vidConnectView = 306;
+
+
+    var printPlusExclusionList = [vidListingAuditReport, vidListingPhotoAuditReport, vidListingAssocDocAuditReport, vidExportCustom, vidPRE];
+    var pdfExclusionList = [vidExportCustom, vidPRE];
+    if (dataController != null) {
+        dataController.TotalRecords = 55;
+    }
+
+    $(function() {
+        if ('') {
+            $("#ReportsBase").addClass("cma-report-panel");
+        }
+        document.getElementById("ifSpreadsheet").onload = function() {
+            resizePage();
+            return true;
+        };
+
+        dataController.TotalRecords = 55;
+        dataController.GridPageSize = 300;
+        dataController.AllowGridDblClick = true;
+
+         
+
+        //Actions button tour
+       
+        
+     });            
+//]]>
+</script>
+
+    <script type="text/javascript">        //<![CDATA[
+        var _isUploadSupported = true;
+        var _isTablet = false;
+        var _isRteSupported = true;
+        window.focusAppPath = "/ParagonLS/";
+        window._ajaxTimeout = 30000;
+        window._parcelStreamUrl = '/ParagonLS/Scripts/GoogleMaps/SpatialStream.min.js';
+        window._infoBoxUrl = '/ParagonLS/Scripts/GoogleMaps/infobox.js';
+        window._mappingProviderName = 'Google';
+        window._cssVersion = "3217612";
+        var todayDt = new Date('2/13/2024 9:41:52 PM');
+        if (parent.$('#cboxPageNumber').length > 0) {
+            parent.$('#cboxPageNumber').remove();
+        }
+
+        if (!$.activityTracking)
+            $.activityTracking = {};
+
+        $.activityTracking.systemId = 'SCWMLS';
+        $.activityTracking.enabled = 'Y';
+        $.activityTracking.diagnostic = 'N';
+        $.activityTracking.server = 'https://p50.paragonrels.com/inferno/' + 'analytics/logeventasync' + (($.activityTracking.diagnostic && $.activityTracking.diagnostic === 'Y') ? '?diagnosticLogging=true' : '');
+        //]]></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        
+        //]]>
+    </script>
+</body>
+</html>
+<!-- Page Render Time: 134ms -->

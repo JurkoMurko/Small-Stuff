@@ -1,0 +1,77 @@
+@keyframes thing {
+    from {
+        background-color: purple;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: green;
+  }
+
+body {
+    animation-name: thing;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    
+    font-family: arial;
+    color: #ffffff;
+    margin: 10px;
+    padding:0px;
+     
+}
+
+.board {		
+    padding: 0 20px ;
+    margin: 30px 20px 20px ;
+    border-width: 5px 5px;
+    border-color: black;
+}
+
+.headace {
+    font-weight:bold;
+    color:red;
+}
+
+
+.side{
+    float: left;
+    width:50%	
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #333
+}
+
+li {
+    float: left;
+    border: 0px;
+}
+
+li a:link, a:visited {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+li a:hover, a:active {
+  background-color: black;
+}
