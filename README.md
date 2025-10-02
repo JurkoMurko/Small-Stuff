@@ -3,7 +3,7 @@
 
 **The projects so far are:**
 * **Arduino** (Very simple electronics projects)
-* **C**** (Basically nothing. I tried learing twice but I run into problems)
+* **C** (Basically nothing. I tried learning twice but I run into problems)
 * **dataVisualisation** (No Idea, maybe I was learning graphs. I wrote this years ago)
 * **fileAutomation** (experamenting with file manipulation in Python w/ os module)
 * **Knife bot** (Using a 3D printed mount, my moms small kitchen knife, and some tape, I made a little bot that I could move the knife with my laptops trackpad)
